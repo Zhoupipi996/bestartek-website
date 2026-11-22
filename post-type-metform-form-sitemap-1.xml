@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap-stylesheet.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/metform-form/about-us/</loc>
+    <lastmod>2025-09-13T20:59:53-04:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-US" href="/metform-form/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="/es/metform-form/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/metform-form/about-us/"/>
+  </url>
+  <url>
+    <loc>/es/metform-form/about-us/</loc>
+    <lastmod>2025-09-13T20:59:53-04:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-US" href="/metform-form/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="/es/metform-form/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/metform-form/about-us/"/>
+  </url>
+  <url>
+    <loc>/metform-form/new-form-1760946277/</loc>
+    <lastmod>2025-10-20T00:59:36-04:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-US" href="/metform-form/new-form-1760946277/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="/es/metform-form/new-form-1760946277/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/metform-form/new-form-1760946277/"/>
+  </url>
+  <url>
+    <loc>/es/metform-form/new-form-1760946277/</loc>
+    <lastmod>2025-10-20T00:59:36-04:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-US" href="/metform-form/new-form-1760946277/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="/es/metform-form/new-form-1760946277/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/metform-form/new-form-1760946277/"/>
+  </url>
+  <url>
+    <loc>/metform-form/new-form-1760946397/</loc>
+    <lastmod>2025-12-30T03:02:28-05:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-US" href="/metform-form/new-form-1760946397/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="/es/metform-form/new-form-1760946397/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/metform-form/new-form-1760946397/"/>
+  </url>
+  <url>
+    <loc>/es/metform-form/new-form-1760946397/</loc>
+    <lastmod>2025-12-30T03:02:28-05:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-US" href="/metform-form/new-form-1760946397/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="/es/metform-form/new-form-1760946397/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/metform-form/new-form-1760946397/"/>
+  </url>
+</urlset>
