@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>Android Tablet Pilot Acceptance Form | BESTAR TEK</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef5fb;color:#172536;font:1rem/1.5 system-ui,sans-serif}main{max-width:62rem;margin:auto;padding:1.5rem;background:#fff}h1,h2{line-height:1.2;color:#142c48}a{color:#164774}fieldset{min-width:0;border:1px solid #aac3d8;padding:1rem;margin:0 0 1rem;border-radius:.5rem}legend{font-weight:700;padding:0 .35rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem 1rem}label{display:block;font-weight:600}textarea,select,button{font:inherit}textarea,select{display:block;width:100%;padding:.35rem;border:1px solid #7b98b0;border-radius:.25rem;background:#fff;color:#172536}textarea{resize:vertical}button{padding:.5rem .85rem;background:#164774;color:white;border:0;border-radius:.3rem;cursor:pointer}.print-value{display:none}@media(max-width:40rem){.grid{grid-template-columns:1fr}}@page{margin:12mm}@media print{body,main{background:white;color:#000}main{padding:0;max-width:none}h1{font-size:18pt}h2{font-size:13pt}fieldset{border-color:#777;break-inside:avoid;padding:.45rem;margin-bottom:.45rem}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.25rem .6rem}label{font-size:9pt}.screen,textarea,select{display:none}.print-value{display:block;min-height:1.4em;padding:.15em .25em;border-bottom:1px solid #777;white-space:pre-wrap;overflow-wrap:anywhere;font-weight:400}}
+</style></head><body><main>
+<p class="screen"><a href="/android-tablet-integration-checklist/">Back to the integration checklist</a></p>
+<h1>Android Tablet Pilot Acceptance Form</h1>
+<p class="screen">Fill in the fields, then print or save as PDF from the print dialog. Entries stay in this tab and are not saved by this page.</p>
+<button class="screen" type="button" id="print">Print / Save as PDF</button>
+<h2>Device and release details</h2>
+<fieldset><legend>Pilot configuration</legend><div class="grid">
+<label>Hardware model / revision<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Android build / firmware version<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>APK package / version<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Peripheral make and model<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Date / run ID<textarea rows="1"></textarea><span class="print-value"></span></label>
+</div></fieldset>
+<h2>Acceptance tests</h2>
+<fieldset><legend>App installation and startup</legend><div class="grid">
+<label>Test conditions<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Expected result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Actual result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Responsible owner<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Status<select><option value="">Select status</option><option>Pass</option><option>Fail</option><option>Blocked</option><option>Not run</option><option>Not applicable</option></select><span class="print-value"></span></label>
+</div></fieldset>
+<fieldset><legend>Kiosk controls and restart recovery</legend><div class="grid">
+<label>Test conditions<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Expected result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Actual result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Responsible owner<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Status<select><option value="">Select status</option><option>Pass</option><option>Fail</option><option>Blocked</option><option>Not run</option><option>Not applicable</option></select><span class="print-value"></span></label>
+</div></fieldset>
+<fieldset><legend>Peripherals, data transfer and power</legend><div class="grid">
+<label>Test conditions<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Expected result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Actual result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Responsible owner<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Status<select><option value="">Select status</option><option>Pass</option><option>Fail</option><option>Blocked</option><option>Not run</option><option>Not applicable</option></select><span class="print-value"></span></label>
+</div></fieldset>
+<fieldset><legend>Connectivity and offline recovery</legend><div class="grid">
+<label>Test conditions<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Expected result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Actual result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Responsible owner<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Status<select><option value="">Select status</option><option>Pass</option><option>Fail</option><option>Blocked</option><option>Not run</option><option>Not applicable</option></select><span class="print-value"></span></label>
+</div></fieldset>
+<fieldset><legend>App or firmware update</legend><div class="grid">
+<label>Test conditions<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Expected result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Actual result<textarea rows="2"></textarea><span class="print-value"></span></label>
+<label>Responsible owner<textarea rows="1"></textarea><span class="print-value"></span></label>
+<label>Status<select><option value="">Select status</option><option>Pass</option><option>Fail</option><option>Blocked</option><option>Not run</option><option>Not applicable</option></select><span class="print-value"></span></label>
+</div></fieldset>
+<fieldset><legend>Pilot sign-off</legend><div class="grid"><label>Approved by / date<textarea rows="2"></textarea><span class="print-value"></span></label><label>Open issues or retest requirements<textarea rows="2"></textarea><span class="print-value"></span></label></div></fieldset>
+</main><script>
+window.addEventListener('beforeprint', () => {
+  document.querySelectorAll('textarea, select').forEach((field) => {
+    field.nextElementSibling.textContent = field.value;
+  });
+});
+document.getElementById('print').addEventListener('click', () => window.print());
+</script></body></html>
