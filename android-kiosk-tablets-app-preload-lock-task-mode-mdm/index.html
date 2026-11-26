@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Android Kiosk Tablets: Preload, Lock Task Mode &amp; MDM | BESTAR TEK</title>
+<meta name="description" content="Kiosk app, DPC, MDM or custom firmware? A buyer’s guide to Android lock task mode, app preload and acceptance tests for kiosk tablet projects.">
+<link rel="canonical" href="https://bestartek.com/android-kiosk-tablets-app-preload-lock-task-mode-mdm/">
+<meta property="og:type" content="article"><meta property="og:title" content="Android Kiosk Tablets: App Preload, Lock Task Mode and MDM">
+<meta property="og:description" content="Kiosk app, DPC, MDM or custom firmware? A buyer’s guide to Android lock task mode, app preload and acceptance tests for kiosk tablet projects."><meta property="og:url" content="https://bestartek.com/android-kiosk-tablets-app-preload-lock-task-mode-mdm/">
+<meta property="og:image" content="https://bestartek.com/wp-content/uploads/2025/11/11.97-tablet-PC-BESTAR-TEK-1.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Android Kiosk Tablets: App Preload, Lock Task Mode and MDM","description":"Kiosk app, DPC, MDM or custom firmware? A buyer’s guide to Android lock task mode, app preload and acceptance tests for kiosk tablet projects.","mainEntityOfPage":"https://bestartek.com/android-kiosk-tablets-app-preload-lock-task-mode-mdm/","image":["https://bestartek.com/wp-content/uploads/2025/11/11.97-tablet-PC-BESTAR-TEK-1.jpg"],"author":{"@type":"Organization","name":"BESTAR TEK","url":"https://bestartek.com/about/"},"publisher":{"@type":"Organization","name":"BESTAR TEK","url":"https://bestartek.com/"},"datePublished":"2026-11-26"}</script>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#172536;background:#fff;font:1.0625rem/1.65 system-ui,sans-serif}a{color:#18538b}a:focus-visible{outline:3px solid #18538b;outline-offset:4px}header{border-bottom:1px solid #dce5ed}nav,main,footer{max-width:72rem;margin:auto;padding:1rem 1.25rem}nav{display:flex;flex-wrap:wrap;gap:.55rem 1.4rem}main{max-width:64rem;padding-block:2.5rem}h1,h2{line-height:1.18;color:#142c48}h1{font-size:clamp(2rem,5vw,3.5rem);margin:.5rem 0 1rem}h2{margin-top:2.4rem}p,li{max-width:75ch}.hero{display:grid;grid-template-columns:2fr 1fr;gap:2rem;align-items:center}.hero figure{margin:0}.hero img{width:100%;height:auto;border-radius:.7rem}figcaption,.byline{font-size:.9rem;color:#43576c}.flow,.brief{padding:1.25rem;background:#eef5fb;border-radius:.75rem}.flow ol{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:.25rem}.table{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:36rem}th,td{border:1px solid #cfdae5;padding:.7rem;text-align:left;vertical-align:top}th{background:#eef5fb}.button{display:inline-block;background:#164774;color:#fff;padding:.65rem 1rem;border-radius:.4rem}footer{border-top:1px solid #dce5ed}@media(max-width:42rem){.hero,.flow ol{grid-template-columns:1fr}.hero figure{max-width:17rem}.flow ol{gap:.5rem}}
+
+.flow h2{margin:.25rem 0 1rem}.flow ol{counter-reset:steps;list-style:none;padding:0;gap:2rem}.flow li{position:relative;min-width:0;border:1px solid #c4d8e9;border-radius:.6rem;padding:1rem;background:#fff}.flow li::before{counter-increment:steps;content:counter(steps);display:grid;place-items:center;background:#164774;color:#fff;border-radius:50%;width:1.8rem;height:1.8rem}.flow li:not(:last-child)::after{content:"";position:absolute;top:50%;left:calc(100% + .55rem);width:.65rem;height:.65rem;border:solid #527b9c;border-width:2px 2px 0 0;transform:translateY(-50%) rotate(45deg)}.flow strong,.flow span,.flow small{display:block}.flow strong{margin:.45rem 0;color:#142c48}.flow small{margin-top:.6rem;color:#43576c}@media(max-width:42rem){.flow li:not(:last-child)::after{top:calc(100% + .55rem);left:50%;transform:translateX(-50%) rotate(135deg)}}
+</style></head><body>
+<header><nav aria-label="Main"><a href="/">BESTAR TEK</a><a href="/service/">Integration services</a><a href="/products/">Products</a><a href="/news/">News</a><a href="/contact-us/">Contact</a></nav></header>
+<main id="main"><article>
+<p class="byline">BESTAR TEK · <time datetime="2026-11-26">November 26, 2026</time></p>
+<h1>Android Kiosk Tablets: App Preload, Lock Task Mode and MDM</h1>
+
+<p><strong>The buyer’s question:</strong> do we need MDM, a DPC or custom firmware to ship a locked-down Android tablet?</p>
+<p><strong>Short answer:</strong> Android’s lock task mode keeps a tablet on your app, but only apps that a device policy controller (DPC) has allowlisted can run in it (<a href="https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode" rel="noopener">Android lock task mode guide</a>). So every kiosk project needs a DPC. It does not automatically need a full MDM, and it needs custom firmware only when something must exist before provisioning or below the app layer, such as a preinstalled system app, boot behaviour, drivers or the OTA client. Decide which layers you need before you ask for a quote.</p>
+
+<figure style="max-width:400px;margin:1.5rem 0"><picture><source type="image/webp" srcset="/android-tablet-integration-checklist/media/tablet-11-97-320.webp 320w, /android-tablet-integration-checklist/media/tablet-11-97-480.webp 480w, /android-tablet-integration-checklist/media/tablet-11-97-800.webp 800w" sizes="(max-width: 440px) calc(100vw - 40px), 400px"><img src="/wp-content/uploads/2025/11/11.97-tablet-PC-BESTAR-TEK-1.jpg" width="800" height="800" style="display:block;width:100%;height:auto;border-radius:.7rem" alt="BESTAR TEK 11.97-inch Android tablet" loading="eager" decoding="async"></picture><figcaption>Example 11.97-inch Android tablet. Kiosk behavior depends on the app, device policy and firmware configuration.</figcaption></figure>
+<h2>Four layers that are often confused</h2>
+<div class="table" tabindex="0" role="region" aria-label="Comparison table"><table>
+<thead><tr><th>Layer</th><th>What it is</th><th>Usually owned by</th></tr></thead>
+<tbody>
+<tr><td>Kiosk app</td><td>The app that presents your content or workflow, often a single-purpose app.</td><td>Your software team</td></tr>
+<tr><td>DPC</td><td>An on-device app that enforces device policy. On a fully managed device it is the device owner. A kiosk app can embed a minimal DPC of its own.</td><td>An MDM vendor, or your team</td></tr>
+<tr><td>MDM / EMM</td><td>A DPC plus a cloud console for enrolment, policy and app distribution.</td><td>An MDM vendor or your IT team</td></tr>
+<tr><td>Firmware customization</td><td>Changes to the Android build itself: preinstalled apps, default launcher, boot animation, drivers, OTA client.</td><td>BESTAR TEK engineering and its manufacturing partners</td></tr>
+</tbody>
+</table></div>
+<p>The Android documentation describes both patterns for lock task mode: a single package that combines a kiosk and a mini DPC, or a DPC from an enterprise mobility management solution that launches your apps in lock task mode.</p>
+
+<h2>Decision table: which layer does your project need?</h2>
+<div class="table" tabindex="0" role="region" aria-label="Comparison table"><table>
+<thead><tr><th>Your situation</th><th>Likely approach</th><th>Confirm before quoting</th></tr></thead>
+<tbody>
+<tr><td>One app, a pilot batch, units can be provisioned by hand</td><td>Kiosk app with a built-in mini DPC</td><td>Android version, provisioning method</td></tr>
+<tr><td>Many sites, remote app updates and policy changes</td><td>Kiosk app plus an MDM</td><td>Does the MDM support lock task mode on this build? Enrolment method</td></tr>
+<tr><td>App or branding must be present at first boot, before enrolment</td><td>Firmware customization, usually combined with MDM</td><td>Who owns the system image and signing keys; effect on OTA</td></tr>
+<tr><td>Peripherals (NFC, serial, scanner) need driver or low-level changes</td><td>Firmware customization</td><td>Driver availability for the chosen platform: to be confirmed</td></tr>
+<tr><td>Personal and work use on the same tablet</td><td>Work profile, not a kiosk</td><td>Outside the scope of lock task kiosks</td></tr>
+</tbody>
+</table></div>
+
+<h2>What the Android documentation says</h2>
+<ul>
+<li>Lock task mode runs on Android 5.0 or later. From Android 9.0 a DPC can start any app’s activity in lock task mode; before that, the app must start its own (<a href="https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode" rel="noopener">lock task mode</a>).</li>
+<li>A DPC can end lock task mode remotely by removing the package from the allowlist. Do not start lock task mode while the device is locked, because the user might not be able to unlock it (same guide).</li>
+<li>Fully managed devices suit dedicated uses such as check-in kiosks and digital signage. Device owner provisioning happens during out-of-box setup or on a factory-reset device (<a href="https://source.android.com/docs/devices/admin" rel="noopener">Android device management overview</a>).</li>
+</ul>
+
+<h2>“App preload” means three different things</h2>
+<p>Ask every supplier which one they mean: the app is installed during provisioning by an MDM; the app is placed in the factory image; or the app is built into the firmware as a system app. They differ in when the app exists, what a factory reset leaves behind and how the app is updated. Do not assume; test it in scenario 4 below.</p>
+
+<h2>Three acceptance scenarios (plus one)</h2>
+<h3>1. Cold boot straight into the kiosk</h3>
+<p><strong>Test:</strong> power-cycle production-intent units repeatedly, including a power cut while the app is launching.<br>
+<strong>Pass:</strong> every start ends in the kiosk app with no setup wizard and no reachable launcher. Agree the number of cycles in writing.<br>
+<strong>Evidence:</strong> screen recording and device log.</p>
+<h3>2. Escape routes are closed</h3>
+<p><strong>Test:</strong> try Home, Recents, notification shade, status bar, settings intents, a USB keyboard and USB debugging access. Android’s guide notes that in lock task mode users typically cannot see notifications, open non-allowlisted apps or return home unless the home screen is allowlisted.<br>
+<strong>Pass:</strong> no route reaches a non-allowlisted app; the agreed admin exit, if any, works.<br>
+<strong>Evidence:</strong> a signed test sheet listing each route tried.</p>
+<h3>3. Remote change without losing the lock</h3>
+<p><strong>Test:</strong> from your MDM, push an app update and then an allowlist change.<br>
+<strong>Pass:</strong> the new app version runs in lock task mode; removing a package from the allowlist ends lock task mode for that app as documented; the screen never lands on an unintended app mid-update.<br>
+<strong>Evidence:</strong> MDM audit log plus screen recording.</p>
+<h3>4. Factory reset and re-provisioning</h3>
+<p><strong>Test:</strong> reset a unit, then re-provision it.<br>
+<strong>Pass:</strong> you have a written list of which preloaded items survive the reset and how long re-provisioning takes.<br>
+<strong>Evidence:</strong> before/after app list and timing notes.</p>
+
+<section class="brief" aria-labelledby="brief"><h2 id="brief">Project requirement template: copy into your inquiry</h2>
+<ul>
+<li>Use case and environment (indoor, outdoor, public, staff-only): ______</li>
+<li>Pilot quantity / first batch / annual estimate: ______</li>
+<li>Target Android version or “open to recommendation”: ______</li>
+<li>Kiosk app: APK supplied by you or built by us; package name: ______</li>
+<li>Lock behaviour: single app or several; exit method: ______</li>
+<li>MDM in use (name or “none”); enrolment method: ______</li>
+<li>Apps to preload, and which must live in firmware: ______</li>
+<li>Peripherals and connectivity (NFC, serial, camera, 4G, Wi-Fi): ______</li>
+<li>Destination countries and certifications you require: ______</li>
+<li>Target delivery date: ______</li>
+<li>Who signs off acceptance on your side: ______</li>
+</ul>
+<p><a class="button" href="/contact-us/#project-inquiry">Request a free hardware recommendation</a></p></section>
+
+<h2>What stays “to be confirmed”</h2>
+<p>Certifications, <a href="/gms-certification-b2b-android-tablets/">Google Mobile Services (GMS)</a> availability, Android version for a given model, MOQ and lead time depend on the model and destination. BESTAR TEK confirms them in the written quotation, not in this article.</p>
+
+<p><a href="/service/">Explore Android tablet integration services</a> · <a href="/android-tablet-integration-checklist/">Pilot integration checklist</a> · <a href="/oem-vs-odm-android-tablets-guide/">Compare OEM and ODM options</a> · <a href="/case-study/8-inch-poe-in-room-control-tablet-hospitality/">See a hospitality tablet case study</a> · <a href="/android-tablet-firmware-ota-validation-before-rollout/">How to Validate Android Tablet Firmware and OTA Updates Before Rollout</a></p>
+</article></main><footer><a href="/about/">About BESTAR TEK</a> · <a href="/contact-us/">Contact</a></footer></body></html>
+
